@@ -1,0 +1,27 @@
+{
+    "name": "My Style",
+    "version": "1.0.0.0",
+    "description": "My Style",
+    "manifest_version": 3,
+    "action": {
+        "default_title": "My Style",
+        "default_icon": {
+            "16": "logo.png",
+            "24": "logo.png",
+            "32": "logo.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ],
+    "web_accessible_resources": [
+    {
+      "matches": [ "<all_urls>" ],
+      "resources": [ "logo.png", "web.css" ]
+    }
+  ]
+}
